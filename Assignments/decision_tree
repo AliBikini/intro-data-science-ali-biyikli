@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Critic_Score &le; 86.5<br/>mse = 4.314<br/>samples = 4777<br/>value = 0.8>, fillcolor="#fdf7f2"] ;
+1 [label=<Critic_Score &le; 75.5<br/>mse = 3.244<br/>samples = 4334<br/>value = 0.636>, fillcolor="#fef9f6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Critic_Score &le; 57.5<br/>mse = 0.939<br/>samples = 2872<br/>value = 0.445>, fillcolor="#fefdfb"] ;
+1 -> 2 ;
+3 [label=<mse = 0.201<br/>samples = 855<br/>value = 0.296>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<mse = 1.239<br/>samples = 2017<br/>value = 0.508>, fillcolor="#fefcfa"] ;
+2 -> 4 ;
+5 [label=<Critic_Score &le; 79.5<br/>mse = 7.558<br/>samples = 1462<br/>value = 1.013>, fillcolor="#fdf3ed"] ;
+1 -> 5 ;
+6 [label=<mse = 12.481<br/>samples = 588<br/>value = 0.818>, fillcolor="#fdf6f2"] ;
+5 -> 6 ;
+7 [label=<mse = 4.204<br/>samples = 874<br/>value = 1.144>, fillcolor="#fcf1e9"] ;
+5 -> 7 ;
+8 [label=<Critic_Score &le; 93.5<br/>mse = 11.967<br/>samples = 443<br/>value = 2.397>, fillcolor="#f8ddc9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Critic_Score &le; 91.5<br/>mse = 8.798<br/>samples = 381<br/>value = 1.935>, fillcolor="#f9e4d5"] ;
+8 -> 9 ;
+10 [label=<mse = 9.438<br/>samples = 313<br/>value = 1.84>, fillcolor="#fae6d7"] ;
+9 -> 10 ;
+11 [label=<mse = 5.618<br/>samples = 68<br/>value = 2.375>, fillcolor="#f8ddca"] ;
+9 -> 11 ;
+12 [label=<Critic_Score &le; 96.5<br/>mse = 22.069<br/>samples = 62<br/>value = 5.237>, fillcolor="#eeae80"] ;
+8 -> 12 ;
+13 [label=<mse = 16.329<br/>samples = 49<br/>value = 4.5>, fillcolor="#f1ba93"] ;
+12 -> 13 ;
+14 [label=<mse = 33.94<br/>samples = 13<br/>value = 8.015>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}
